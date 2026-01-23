@@ -1,12 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 import webcamReducer from "../features/webcam/webcamSlice";
-import faceReducer from "../features/face/faceSlice";
+// import faceReducer from "../features/face/faceSlice";
 
 export const store = configureStore({
     reducer: {
         webcam: webcamReducer,
-        face: faceReducer,
+        // face: faceReducer,
     },
 });
 
