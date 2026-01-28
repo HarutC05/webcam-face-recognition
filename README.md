@@ -73,6 +73,7 @@ npm start
 
 ## Project Structure
 
+```
 src/
 ├── app/
 │   └── store.ts
@@ -90,6 +91,7 @@ src/
 └── App.css
 └── index.tsx
 └── index.css
+```
 
 ---
 
