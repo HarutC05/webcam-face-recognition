@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { webcamOn, webcamOff } from "./webcamSlice";
 import type { RootState } from "../../app/store";
@@ -59,17 +59,21 @@ function Webcam() {
     };
 
     // Stop webcam
-    const stopWebcam = () => {
+    const stopWebcam = useCallback(() => {
         if (videoRef.current && videoRef.current.srcObject) {
             const stream = videoRef.current.srcObject as MediaStream;
             stream.getTracks().forEach((track) => track.stop());
             videoRef.current.srcObject = null;
         }
-        if (animationRef.current) cancelAnimationFrame(animationRef.current);
+
+        if (animationRef.current) {
+            cancelAnimationFrame(animationRef.current);
+            animationRef.current = null;
+        }
 
         dispatch(webcamOff());
         dispatch(clearFaces());
-    };
+    }, [dispatch]);
 
     // Handle image upload
     const handleImageUpload = async (
@@ -129,7 +133,7 @@ function Webcam() {
     // Cleanup
     useEffect(() => {
         return () => stopWebcam();
-    }, []);
+    }, [stopWebcam]);
 
     return (
         <div className="d-flex flex-column align-items-center mt-3">
