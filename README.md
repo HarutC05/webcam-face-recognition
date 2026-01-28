@@ -1,6 +1,3 @@
-## **README.md**
-
-````markdown
 # Facial Recognition Web App
 
 ![React](https://img.shields.io/badge/Framework-React-blue)
@@ -45,28 +42,21 @@ The application is built using **React, TypeScript, Redux, and Bootstrap** and i
 
 1. Clone the repository:
 
-```bash
+
 git clone https://github.com/<HarutC05>/<webcam-face-recognition>.git
-```
-````
+
 
 2. Navigate into the project folder:
 
-```bash
 cd <webcam-face-recognition>
-```
 
 3. Install dependencies:
 
-```bash
 npm install
-```
 
 4. Start the development server:
 
-```bash
 npm start
-```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
@@ -74,16 +64,15 @@ npm start
 
 ## Usage
 
-- Click **Start Webcam** to begin real-time face detection.
-- Click **Stop Webcam** to stop the feed and clear detected faces.
-- Upload an image using the **Upload Image** button to detect faces in any photo.
-- Hover or look at faces to see **age**, **gender**, and **dominant emotion**.
+* Click **Start Webcam** to begin real-time face detection.
+* Click **Stop Webcam** to stop the feed and clear detected faces.
+* Upload an image using the **Upload Image** button to detect faces in any photo.
+* Hover or look at faces to see **age**, **gender**, and **dominant emotion**.
 
 ---
 
 ## Project Structure
 
-```
 src/
 ├── app/
 │   └── store.ts
@@ -101,16 +90,34 @@ src/
 └── App.css
 └── index.tsx
 └── index.css
-```
 
 ---
 
 ## Screenshots
 
 ![Webcam feed](screenshots/webcam-feed.png)
-_Webcam feed with detected faces overlayed._
+*Webcam feed with detected faces overlayed.*
 
 ![Image upload](screenshots/upload-detect.png)
-_Uploaded image with face detection and emotion recognition._
+*Uploaded image with face detection and emotion recognition.*
+
+---
+
+## Deployment
+
+You can deploy this app to any static hosting or cloud platform like **Netlify, Vercel, AWS Amplify, or Heroku**.
+
+### Example: Deploy to Netlify (Free)
+
+1. Push your code to GitHub.
+2. Go to [https://app.netlify.com/](https://app.netlify.com/) and log in.
+3. Click **New site from Git** → Choose your GitHub repository → Deploy.
+4. Netlify will build and host your app. You get a live URL instantly.
+
+---
+
+## License
+
+This project is open-source and free to use.
 
 ---
