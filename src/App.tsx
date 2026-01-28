@@ -1,10 +1,12 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import Webcam from "./features/webcam/Webcam";
 
 function App() {
-    return <Webcam />;
+    return (
+        <div className="App d-flex flex-column align-items-center p-3">
+            <h1>Face Detection App</h1>
+            <Webcam />
+        </div>
+    );
 }
 
 export default App;
