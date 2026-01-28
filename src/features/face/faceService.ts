@@ -1,4 +1,4 @@
-import * as faceapi from "face-api.js/dist/face-api.min.js";
+import * as faceapi from "face-api.js/dist/face-api.esm.js";
 
 export const detectFaces = async (
     input: HTMLVideoElement | HTMLImageElement,

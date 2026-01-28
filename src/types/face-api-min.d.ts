@@ -1,1 +1,1 @@
-declare module "face-api.js/dist/face-api.min.js";
+declare module "face-api.js/dist/face-api.esm.js";
