@@ -42,13 +42,7 @@ The application is built using **React, TypeScript, Redux, and Bootstrap** and i
 
 1. Clone the repository:
 
-<<<<<<< HEAD
 git clone https://github.com/<HarutC05>/<webcam-face-recognition>.git
-=======
-
-git clone https://github.com/<HarutC05>/<webcam-face-recognition>.git
-
-> > > > > > > d82b3c5ebcbfe060f92f3b34cf08bbf64f63682c
 
 2. Navigate into the project folder:
 
@@ -106,19 +100,6 @@ _Webcam feed with detected faces overlayed._
 
 ![Image upload](screenshots/upload-detect.png)
 _Uploaded image with face detection and emotion recognition._
-
----
-
-## Deployment
-
-You can deploy this app to any static hosting or cloud platform like **Netlify, Vercel, AWS Amplify, or Heroku**.
-
-### Example: Deploy to Netlify (Free)
-
-1. Push your code to GitHub.
-2. Go to [https://app.netlify.com/](https://app.netlify.com/) and log in.
-3. Click **New site from Git** → Choose your GitHub repository → Deploy.
-4. Netlify will build and host your app. You get a live URL instantly.
 
 ---
 
